@@ -1,5 +1,6 @@
 <div align="center">
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/17d505dc-ec64-4af8-99f3-fb779e893c5e" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/4f19cac9-5da5-4271-b32b-6b81f645d4da" />
+
 
 # ⚡ MW4 Stutter Fix 2026
 
