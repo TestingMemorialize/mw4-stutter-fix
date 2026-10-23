@@ -61,8 +61,8 @@ While Microsoft and Nvidia have released **Advanced Shader Delivery** to help wi
 
 | Main Interface |
 |:---:|
-(<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/1fb06d69-f3d3-4d37-aa45-f61cc1742afb" />
-) 
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/1fb06d69-f3d3-4d37-aa45-f61cc1742afb" />
+
 </div>
 
 ---
